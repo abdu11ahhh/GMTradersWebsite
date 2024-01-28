@@ -1,0 +1,383 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  margin-top: 20px;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  margin-bottom: 120px;
+}
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-img {
+  padding-top: 10px;
+  padding-bottom: 120px;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  height: 530px;
+  padding-inline: 30px;
+  position: relative;
+}
+.home-heading {
+  color: #ffffff;
+  margin-top: 360px;
+  font-size: 54px;
+  max-width: 700px;
+  line-height: 60px;
+}
+
+.bg-img::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff550033;
+}
+.header-el {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 130px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: black;
+  display: block;
+  font-size: 18px;
+  padding: 8px 20px;
+  transition: 0.2;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.nav-items li a:hover {
+  color: #ff5700;
+}
+
+#about {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  margin-bottom: 120px;
+}
+
+.aboutUs-para {
+  margin-top: 60px;
+  font-size: 24px;
+}
+
+.productHeading {
+  font-size: 50px;
+  text-align: center;
+  color: #ff5700;
+}
+
+.testimonial-container {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  padding-inline: 60px;
+}
+
+#product {
+  margin-top: 120px;
+}
+
+.testimonial {
+  max-width: 260px;
+  min-width: 120px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #333333;
+}
+
+.testimonial:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.144);
+  background-color: #ff5700;
+  transition: 0.6s;
+}
+
+.testimonial-avatar {
+  background-color: #ff5700;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-avatar img {
+  height: 40px;
+}
+
+.testimonial-text {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: auto;
+  text-align: justify;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+#products {
+  padding-inline: 60px;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: auto; /* Let the rows adjust based on content */
+  grid-template-columns: 25% 25% 25% 25%; /* Single column layout for small screens */
+}
+#more1,
+#more2,
+#more3,
+#more4,
+#more5,
+#more6 {
+  display: none;
+}
+
+div.product {
+  margin-top: 60px;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 20px;
+  text-align: center; /* Center the content */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 10px; /* Rounded corners for the products */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a lifted effect */
+}
+
+div.product img {
+  /* Make the image fill the container */
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+div.product p {
+  color: #333333; /* Dark text color */
+  font-size: 16px;
+  padding: 16px;
+  text-align: justify;
+}
+
+div.product:hover {
+  background-color: #ffffff;
+}
+
+div.product img:hover {
+  transform: scale(0.99);
+  transition: 0.3s; /* Scale the image on hover */
+}
+
+.product button {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: #ff5700;
+}
+
+.product button:hover {
+  color: #e74d00;
+  transform: translateX(12px);
+}
+
+/* Style for the contact section */
+#contact {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+#contact p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Style for the form elements */
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 120px;
+}
+
+input[type='submit'] {
+  background-color: #ff5700;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type='submit']:hover {
+  background-color: white;
+  border: 1px solid #ff5700;
+  color: #ff5700;
+  transition: 0.5s;
+}
+
+/* Media Query for Large Screens */
+
+footer {
+  background-color: #ff5700;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/* Style for hover effect on links */
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  #products {
+    grid-template-columns: 50% 50%; /* Three columns layout for large screens */
+  }
+  .testimonial-container {
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-between;
+  }
+  nav ul li a {
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+  header {
+    padding-inline: 30px;
+    margin-bottom: 60px;
+  }
+  .bg-img {
+    height: 400px;
+    background-size: cover;
+  }
+  .home-heading {
+    margin-top: 270px;
+    max-width: 600px;
+    line-height: 50px;
+  }
+  #about {
+    padding-inline: 30px;
+    text-align: justify;
+  }
+  .aboutUs-para {
+    font-size: 20px;
+  }
+}
+@media (max-width: 796px) {
+  .logo {
+    width: 80px;
+  }
+  header {
+    padding-inline: 0px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .bg-img {
+    height: 200px;
+  }
+
+  .home-heading {
+    max-width: 400px;
+    font-size: 30px;
+    margin-top: 190px;
+    line-height: 30px;
+  }
+
+  #about {
+    margin-bottom: 30px;
+  }
+
+  .aboutUs-para {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px;
+  }
+
+  #products {
+    grid-template-columns: 100%;
+    padding-inline: 30px;
+    margin-bottom: 60px; /* Two columns layout for medium screens */
+  }
+  .testimonial {
+    max-width: 600px;
+  }
+  .testimonial-container {
+    justify-content: center;
+    padding-inline: 30px;
+    gap: 30px;
+  }
+  #product {
+    margin-top: 60px;
+  }
+
+  .productHeading {
+    font-size: 28px;
+  }
+}
